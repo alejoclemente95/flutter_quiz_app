@@ -60,10 +60,12 @@ class _MyAppState extends State<MyApp> {
   //same with functions, a leading underscore will make this method as private
   void _answerQuestion(int score) {
     _totalScore += score;
-    print(_totalScore);
+
     setState(() {
       _questionIndex++;
     });
+
+    
   }
 
   void _resetQuiz() {
